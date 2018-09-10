@@ -1,5 +1,4 @@
 Instalación:
-## INSTALACIÓN
 
 1) Clonar este repositorio con: 
 		```git clone https://github.com/giovannyc28/flota.git```
