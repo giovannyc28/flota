@@ -1,0 +1,33 @@
+Instalación:
+
+1) Clonar este repositorio con 
+		git clone https://github.com/giovannyc28/flota.git
+
+2) Cambiar al directorio liftit_prueba
+		cd liftit_prueba
+
+3) Inicializar los contenedores docker:
+		docker-compose build web
+
+4) Mostrara un error al no etar disponible el volumen de la BD, ejecutar:
+		docker volume create --name=db_data
+	y Luego volver a ejecutar
+		docker-compose build web		
+
+5) Subir los contenedores:
+		docker-compose up
+
+6) Ingresar al modo interativo del contenedor:
+
+	docker exec -i -t liftitprueba_web_1 /bin/bash
+
+7) Esto nos abrira una consola de comandos ej: "root@670fe230d56b:/webapp#", alli debemos ejecutar
+
+	7.1) Ejecutar las migraciones en la BD con:
+		
+		python manage.py migrate auth
+		python manage.py migrate
+
+	7.2) Crear un usuario
+		
+		python manage.py createsuperuser
