@@ -21,14 +21,14 @@ Instalación:
 		
 Subir el contenedor :
 
-		```docker-compose up -d```
+		docker-compose up -d
 
 Bajar el contendor :
 		
-		```docker-compose down```
+		docker-compose down
 
 Ingresar al modo interativo del contenedor:
 
-	```docker exec -i -t flota_web_1 /bin/bash```
+		docker exec -i -t flota_web_1 /bin/bash
 
-	Esto nos abrira una consola de comandos ej: "root@670fe230d56b:/webapp#", 
+Esto nos abrira una consola de comandos ej: "root@670fe230d56b:/webapp#", 
