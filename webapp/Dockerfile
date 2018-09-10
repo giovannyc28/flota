@@ -13,6 +13,4 @@ ADD requirements/base.txt $WEBAPP_DIR/
 ADD requirements/$DJANGO_ENV.txt $WEBAPP_DIR/
 
 RUN pip install -r $DJANGO_ENV.txt
-RUN apt-get update
-RUN apt-get install -y vim-tiny
 ADD . $WEBAPP_DIR/
