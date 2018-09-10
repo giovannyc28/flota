@@ -16,7 +16,7 @@ Instalación:
 		Password (again): 
 		Superuser created successfully.
 
-5) Entrar desde un navegador http://localhost:8000/admin
+5) Entrar desde un navegador http://localhost:8000/admin/flota/
 	Digitar el nombre de usuario y password definidos en el paso 4.
 		
 Subir el contenedor :
